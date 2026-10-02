@@ -1,0 +1,55 @@
+:root {
+    --color-primario: #27ae60;
+    --color-secundario: #1e8449;
+    --color-acento: #7dcea0;
+    --color-fondo: #D4EFDF;
+    --color-text: #1A2B4A;
+    --fuente-principal: "Roboto";
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body {
+    background-color: var(--color-fondo);
+    color: var(--color-texto);
+    font-family: var(--fuente-principal), sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+header {
+    background-color: var(--color-acento);
+    padding: 10px;
+}
+
+footer {
+    background-color: var(--color-acento);
+    padding: 10px;
+}
+
+.contenedor {
+    background-color: var(--color-primario);
+    max-width: 600px;
+    margin: 10px auto;
+    padding: 10px;
+}
+nav{
+    margin-top: 10px;
+}
+nav a {
+    color: var(--color-texto);
+    background-color: var(--color-secundario);
+    font-weight: 600;
+    margin: 5px;
+    padding: 10px;
+}
+
+nav a:hover {
+    background-color: var(--color-fondo);
+}
