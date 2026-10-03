@@ -2,7 +2,7 @@
     --color-primario: #27ae60;
     --color-secundario: #1e8449;
     --color-acento: #7dcea0;
-    --color-fondo: #D4EFDF;
+    --color-fondo: #dadada;
     --color-text: #1A2B4A;
     --fuente-principal: "Roboto";
 }
@@ -14,7 +14,7 @@
 
 body {
     background-color: var(--color-fondo);
-    color: var(--color-texto);
+    color: var(--color-text);
     font-family: var(--fuente-principal), sans-serif;
     font-size: 16px;
     line-height: 1.6;
@@ -43,17 +43,24 @@ nav{
     margin-top: 10px;
 }
 nav a {
-    color: var(--color-texto);
+    color: var(--color-text);
     background-color: var(--color-secundario);
     font-weight: 600;
     margin: 5px;
     padding: 10px;
+    text-decoration: none;
 }
 
 nav a:hover {
     background-color: var(--color-fondo);
+      color: var(--color-text);
 }
 
 .index {
     font-family: "Clarity City", sans-serif;
+    line-height: 1.5 ;  
 } 
+
+#titulo-principal {
+    text-align: center;
+}
