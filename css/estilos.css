@@ -1,7 +1,7 @@
 :root {
-    --color-primario: #27ae60;
+    --color-primario: #7DCEA0;
     --color-secundario: #1e8449;
-    --color-acento: #7dcea0;
+    --color-acento: #229954;
     --color-fondo: #dadada;
     --color-text: #1A2B4A;
     --fuente-principal: "Roboto";
@@ -35,7 +35,7 @@ footer {
 
 .contenedor {
     background-color: var(--color-primario);
-    max-width: 600px;
+    max-width: 1000px;
     margin: 10px auto;
     padding: 10px;
 }
@@ -67,4 +67,46 @@ nav a:hover {
 .lugares {
     font-family: "Clarity City", sans-serif;
     line-height: 1.5 ;  
+}
+
+section {
+    margin-bottom: 30px;
+}
+article {
+    background-color: #A9DFBF;
+    padding: 25px;
+    margin-bottom: 25px;
+    border-radius: 8px;
+}
+h1 {
+    font-size: 32px;
+    margin-bottom: 15px;
+}
+h2 {
+    font-size: 22px;
+    color: #196F3D;
+    margin-bottom: 20px;
+}
+h3 {
+    font-size: 26px;
+    color: #196F3D;
+    margin-bottom: 10px;
+}
+p {
+    margin-bottom: 15px;
+    line-height: 1.6;
+}
+.lugares section > h2 {
+    text-align: center;
+}
+.lugares .titulo-seccion {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
 }
