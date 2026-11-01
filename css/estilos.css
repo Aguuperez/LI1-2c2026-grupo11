@@ -39,10 +39,10 @@ footer {
     margin: 10px auto;
     padding: 10px;
 }
-nav{
-    margin-top: 10px;
+nav:not(.navbar)
+ {    margin-top: 10px;
 }
-nav a {
+nav:not(.navbar)  a {
     color: var(--color-text);
     background-color: var(--color-secundario);
     font-weight: 600;
@@ -51,7 +51,7 @@ nav a {
     text-decoration: none;
 }
 
-nav a:hover {
+nav:not(.navbar) a:hover {
     background-color: var(--color-fondo);
       color: var(--color-text);
 }
