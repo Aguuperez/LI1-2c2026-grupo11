@@ -212,6 +212,74 @@ p {
     color: #dadada;
 }
 
+.index .imagen-lugar {
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    border: 2px solid var(--color-secundario);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.index .imagen-lugar img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    filter: saturate(1.2) contrast(1.05);
+    transition: transform 0.4s;
+}
+
+.index .imagen-lugar:hover img {
+    transform: scale(1.06);
+}
+
+.index .imagen-lugar::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(
+        135deg,
+        rgba(34, 153, 84, 0.18),
+        rgba(26, 43, 74, 0.12)
+    );
+    pointer-events: none;
+}
+
+.index .info-puerto {
+    margin: 40px auto;
+}
+
+.index .info-puerto h2 {
+    color: var(--color-secundario);
+    margin-bottom: 25px;
+}
+
+.index .item-puerto {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding: 20px;
+    height: 100%;
+    background-color: #D4EFDF;
+    border: 1px solid var(--color-primario);
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+.index .item-puerto span {
+    font-size: 28px;
+}
+
+.index .item-puerto p {
+    margin: 0;
+    color: var(--color-secundario);
+    font-weight: 500;
+}
+
+.index .item-puerto:hover {
+    background-color: var(--color-primario);
+    transform: translateY(-4px);
+}
+
 
 /* ===== RESPONSIVE ===== */
 
