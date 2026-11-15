@@ -11,9 +11,9 @@
     <link rel="stylesheet" href="css/estilos.css">
     <title>Puerto Aurora - Contacto</title>
 </head>
-<body>
+<body class="contacto">
     <header>
-        <h1>Contáctanos</h1>
+        <h1 class="titulo-contacto">Contáctanos</h1>
      <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <div class="container">
             <a class="navbar-brand" href="index.html">
@@ -81,10 +81,27 @@
             </div>
 
         </section>
+        <section class="contenedor" id="Formulario">  
+            <h2>Envianos un mensaje:</h2>
+                <form id="form" class="vstack gap-3" data-bs-validate>
+                    <div class="form-field flex-1">
+                        <label for="fieldValidateEmail" class="form-label">Correo eletronico</label>
+                        <input type="email" class="form-control" id="fieldValidateEmail" required>
+                    </div>
+                    <div class="form-field">
+                        <label for="fieldTextarea" class="form-label">Deje su mensaje</label>
+                        <textarea class="form-control" id="fieldTextarea" rows="3" required></textarea>
+                    </div>
+                
+                    <div id="liveAlertPlaceholder"></div>
+                    <button type="submit" class="boton" id="alerta">Enviar</button>
+                </form>
+        </section> 
     </main>
     <footer>
         <p>&copy; 2026 Puerto Aurora - Sitio turístico ficticio</p>
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
 </body>
 </html>
