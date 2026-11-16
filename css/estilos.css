@@ -7,7 +7,7 @@
     --color-acento: #229954;
     --color-fondo: #dadada;
     --color-text: #1A2B4A;
-    --fuente-principal: "Clarity City";
+    --fuente-principal: "Roboto";
 }
 
 
@@ -24,9 +24,9 @@ body {
     font-family: var(--fuente-principal), sans-serif;
     font-size: 16px;
     line-height: 1.6;
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 1rem;
+    width: 100%;
+    margin: 0 ;
+    padding: 0 ;
 }
 
 header, footer {
@@ -36,9 +36,9 @@ header, footer {
 
 .contenedor {
     background-color: var(--color-primario);
-    max-width: 1000px;
-    margin: 10px auto;
-    padding: 10px;
+    max-width: 100%;
+    margin: 10px 0;
+    padding: 0;
 }
 
 section {
@@ -54,7 +54,11 @@ article {
 
 
 /* ===== NAVEGACIÓN ===== */
-
+.navbar {
+    position :sticky;
+    top: 0 ;
+    z-index: 1020;
+}
 nav:not(.navbar) {
     margin-top: 10px;
 }
@@ -91,10 +95,6 @@ nav:not(.navbar) a:hover {
 
 /* ===== TIPOGRAFÍA ===== */
 
-.index, .lugares {
-    font-family: "Clarity City", sans-serif;
-    line-height: 1.5;
-}
 
 #titulo-principal {
     text-align: center;
@@ -106,13 +106,13 @@ h1 {
 }
 
 h2 {
-    font-size: 22px;
+    font-size: 26px;
     color: #196F3D;
     margin-bottom: 20px;
 }
 
 h3 {
-    font-size: 26px;
+    font-size: 21px;
     color: #196F3D;
     margin-bottom: 10px;
 }
