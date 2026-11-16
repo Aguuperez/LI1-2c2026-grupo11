@@ -307,3 +307,9 @@ p {
         height: 200px;
     }
 }
+
+.logo-navbar {
+    width: 65px;
+    height: 65px;
+    object-fit: contain;
+}
