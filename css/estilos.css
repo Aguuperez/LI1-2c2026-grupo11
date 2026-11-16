@@ -34,7 +34,12 @@ body {
     padding: 0 ;
 }
 
-header, footer {
+header {
+    background-color: var(--color-acento);
+    padding: 0;
+}
+
+footer {
     background-color: var(--color-acento);
     padding: 10px;
 }
@@ -59,6 +64,13 @@ article {
 
 
 /* ===== NAVEGACIÓN ===== */
+
+.navbar .navbar-brand .logo-navbar {
+    width: 75px !important;
+    height: 75px !important;
+    max-width: none;
+    object-fit: contain;
+}
 .navbar {
     position :sticky;
     top: 0 ;
